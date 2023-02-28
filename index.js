@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "./client/build")))
 
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./client/build/static/index.html"))
+    res.sendFile(path.join(__dirname, "./client/build/index.html"))
 })
 
 app.post('/login', async (req, res) => {
